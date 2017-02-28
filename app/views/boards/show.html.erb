@@ -1,0 +1,12 @@
+<h1 data-board-id="<%= @board.id %>" class="board-title">Link Board <%= @board.id  %></h1>
+
+<%= form_for(@link, remote: true, url: board_links_path(@board)) do |f| %>
+ <%= f.text_field :url %>
+ <%= f.submit "Add" %>
+<% end %>
+
+<ul class="link-list">
+  <% @links.each do |link| %>
+		<li><%= link.url %></li>
+  <% end %>
+</ul>
