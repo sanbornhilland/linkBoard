@@ -1,4 +1,8 @@
-<h1 data-board-id="<%= @board.id %>" class="board-title">Link Board <%= @board.id  %></h1>
+<h1 data-board-id="<%= @board.id %>" class="board-title h5"><%= @board.id  %></h1>
+
+<div class="link-drop-zone h1 alternative-font-color">
+  <p class="link-drop-zone-text">Drop a link here</p>
+</div>
 
 <%= form_for(@link, remote: true, url: board_links_path(@board)) do |f| %>
  <%= f.text_field :url %>

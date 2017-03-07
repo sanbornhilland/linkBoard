@@ -1,3 +1,18 @@
-// Place all the styles related to the boards controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.link-drop-zone {
+  width: 80%;
+  height: 150px;
+  border: 4px dashed $light-blue;
+  margin: 0 auto;
+  background-color: $light-blue;
+  padding: 10px;
+  background-clip: content-box;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.link-drop-zone-text {
+  padding: 10px;
+}
