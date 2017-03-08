@@ -16,3 +16,16 @@
 .link-drop-zone-text {
   padding: 10px;
 }
+
+.link-list {
+  width: 80%;
+  margin: 0 auto;
+  -webkit-padding-start: 0;
+  text-align: center;
+}
+
+.link {
+  display: inline-block;
+  min-width: 300px;
+  margin: 0 auto;
+}
